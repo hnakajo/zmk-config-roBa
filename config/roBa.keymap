@@ -53,6 +53,36 @@
             bindings = <&kp RPAR>;
             key-positions = <12 13>;
         };
+
+        WE_L_BKT {
+            bindings = <&kp LBKT>;
+            key-positions = <1 2>;
+        };
+
+        ER_R_BKT {
+            bindings = <&kp RBKT>;
+            key-positions = <2 3>;
+        };
+
+        RF_F2 {
+            bindings = <&kp F2>;
+            key-positions = <13 3>;
+        };
+
+        ED_F4 {
+            bindings = <&kp F4>;
+            key-positions = <12 2>;
+        };
+
+        DC_Ctrl+C {
+            bindings = <&kp LC(C)>;
+            key-positions = <12 24>;
+        };
+
+        FV_Ctrl+Sft+V {
+            bindings = <&kp LC(LS(V))>;
+            key-positions = <13 25>;
+        };
     };
 
     macros {
