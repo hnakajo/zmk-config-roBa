@@ -143,6 +143,11 @@
             bindings = <&kp LS(LC(X))>;
             key-positions = <14 13>;
         };
+
+        Combo_AT {
+            bindings = <&kp AT>;
+            key-positions = <20 21>;
+        };
     };
 
     macros {
