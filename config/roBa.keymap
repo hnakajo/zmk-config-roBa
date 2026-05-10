@@ -93,6 +93,51 @@
             bindings = <&kp LC(V)>;
             key-positions = <25 24>;
         };
+
+        P-_HASH {
+            bindings = <&kp HASH>;
+            key-positions = <9 21>;
+        };
+
+        OL_DALLAR {
+            bindings = <&kp DOLLAR>;
+            key-positions = <8 20>;
+        };
+
+        IK_PCNT {
+            bindings = <&kp PRCNT>;
+            key-positions = <7 19>;
+        };
+
+        UJ_AMPS {
+            bindings = <&kp AMPS>;
+            key-positions = <6 18>;
+        };
+
+        JM_STAR {
+            bindings = <&kp STAR>;
+            key-positions = <18 30>;
+        };
+
+        Combo_Ctrl+Sft+K {
+            bindings = <&kp RS(RC(K))>;
+            key-positions = <31 19>;
+        };
+
+        Combo_PLUS {
+            bindings = <&kp PLUS>;
+            key-positions = <31 32>;
+        };
+
+        Combo_Ctrl+Sft+L {
+            bindings = <&kp LC(LS(L))>;
+            key-positions = <20 32>;
+        };
+
+        Combo_SLSH {
+            bindings = <&kp SLASH>;
+            key-positions = <9 8>;
+        };
     };
 
     macros {
@@ -105,13 +150,13 @@
     };
 
     behaviors {
-        lt_to_layer_0: lt_to_layer_0 {
+        LYR_ARROW: LYR_ARROW {
             compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
-
+            label = "LYR_ARROW";
+            bindings = <&mo>;
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+            hold-trigger-key-positions = <41>;
         };
 
         HT_hyphen: HT_hyphen {
@@ -134,6 +179,13 @@
             hold-trigger-key-positions = <41>;
             tapping-term-ms = <200>;
         };
+
+        LYR_ARROW_NUM: LYR_ARROW_NUM {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LYR_ARROW_NUM";
+            #binding-cells = <0>;
+            bindings = <&LYR_ARROW 1>, <&LYR_NUM 2 0>;
+        };
     };
 
     keymap {
@@ -141,10 +193,10 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp W         &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &lt 4 I    &kp O    &kp P
-&kp A         &kp S         &kp D         &kp F                        &kp G        &kp LCTRL                          &kp MINUS      &kp H        &kp J  &kp K      &kp L    &HT_hyphen GRAVE MINUS
-&kp Z         &kp X         &kp C         &kp V                        &kp B        &kp LSHFT                          &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_GUI  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 INT_HENKAN  &lt 3 SPACE  &lt_to_layer_0 1 INT_MUHENKAN      &kp BACKSPACE  &lt 0 ENTER                             &kp DEL
+&kp Q         &kp W         &kp E         &kp R                    &kp T                                                      &kp Y           &kp U  &lt 4 I    &kp O    &kp P
+&kp A         &kp S         &kp D         &kp F                    &kp G        &kp LCTRL                      &kp MINUS      &kp H           &kp J  &kp K      &kp L    &HT_hyphen GRAVE MINUS
+&kp Z         &kp X         &kp C         &kp V                    &kp B        &kp LSHFT                      &kp SEMICOLON  &kp N           &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_GUI  &kp LEFT_WIN  &kp LEFT_ALT  &LYR_ARROW 5 INT_HENKAN  &lt 3 SPACE  &LYR_ARROW 1 INT_MUHENKAN      &kp BACKSPACE  &LYR_ARROW_NUM                             &kp DEL
             >;
         };
 
