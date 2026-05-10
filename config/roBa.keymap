@@ -138,6 +138,11 @@
             bindings = <&kp SLASH>;
             key-positions = <9 8>;
         };
+
+        GF_Ctrl+Sft+X {
+            bindings = <&kp LS(LC(X))>;
+            key-positions = <14 13>;
+        };
     };
 
     macros {
@@ -153,7 +158,8 @@
         LYR_ARROW: LYR_ARROW {
             compatible = "zmk,behavior-hold-tap";
             label = "LYR_ARROW";
-            bindings = <&mo>;
+            bindings = <&mo>, <&kp>;
+
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             hold-trigger-key-positions = <41>;
@@ -202,10 +208,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &kp PAGE_UP       &kp UP_ARROW      &kp PAGE_DOWN     &trans
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &kp LEFT          &kp DOWN_ARROW    &kp RIGHT_ARROW   &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)
+&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                                        &trans
             >;
         };
 
