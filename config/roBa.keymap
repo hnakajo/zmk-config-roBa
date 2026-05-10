@@ -83,6 +83,16 @@
             bindings = <&kp LC(LS(V))>;
             key-positions = <13 25>;
         };
+
+        XCV_Ctrl+Alt+V {
+            bindings = <&kp LA(LC(V))>;
+            key-positions = <25 24 23>;
+        };
+
+        CV_Ctrl+V {
+            bindings = <&kp LC(V)>;
+            key-positions = <25 24>;
+        };
     };
 
     macros {
