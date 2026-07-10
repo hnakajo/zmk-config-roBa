@@ -204,10 +204,10 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp W         &kp E         &kp R                    &kp T                                                      &kp Y           &kp U  &lt 4 I    &kp O    &kp P
-&kp A         &kp S         &kp D         &kp F                    &kp G        &kp LCTRL                      &kp MINUS      &kp H           &kp J  &kp K      &kp L    &HT_hyphen GRAVE MINUS
-&kp Z         &kp X         &kp C         &kp V                    &kp B        &kp LSHFT                      &kp SEMICOLON  &kp N           &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_GUI  &kp LEFT_WIN  &kp LEFT_ALT  &LYR_ARROW 5 INT_HENKAN  &lt 3 SPACE  &LYR_ARROW 1 INT_MUHENKAN      &kp BACKSPACE  &LYR_ARROW_NUM                             &kp DEL
+&kp Q         &kp W         &kp E         &kp R                    &kp T                                    &kp Y           &kp U  &lt 4 I    &kp O    &kp P
+&kp A         &kp S         &kp D         &kp F                    &kp G      &kp LCTRL      &kp MINUS      &kp H           &kp J  &kp K      &kp L    &HT_hyphen GRAVE MINUS
+&kp Z         &kp X         &kp C         &kp V                    &kp B      &kp LSHFT      &kp SEMICOLON  &kp N           &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_GUI  &kp LEFT_WIN  &kp LEFT_ALT  &LYR_ARROW 5 INT_HENKAN  &kp SPACE  &kp ENTER      &kp BACKSPACE  &LYR_ARROW_NUM                             &kp DEL
             >;
         };
 
