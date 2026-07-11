@@ -74,22 +74,22 @@
             key-positions = <12 2>;
         };
 
-        DC_Ctrl+C {
+        DC_Ctrl_C {
             bindings = <&kp LC(C)>;
             key-positions = <12 24>;
         };
 
-        FV_Ctrl+Sft+V {
+        FV_Ctrl_Sft_V {
             bindings = <&kp LC(LS(V))>;
             key-positions = <13 25>;
         };
 
-        XCV_Ctrl+Alt+V {
+        XCV_Ctrl_Alt_V {
             bindings = <&kp LA(LC(V))>;
             key-positions = <25 24 23>;
         };
 
-        CV_Ctrl+V {
+        CV_Ctrl_V {
             bindings = <&kp LC(V)>;
             key-positions = <25 24>;
         };
@@ -119,7 +119,7 @@
             key-positions = <18 30>;
         };
 
-        Combo_Ctrl+Sft+K {
+        Combo_Ctrl_Sft_K {
             bindings = <&kp RS(RC(K))>;
             key-positions = <31 19>;
         };
@@ -129,7 +129,7 @@
             key-positions = <31 32>;
         };
 
-        Combo_Ctrl+Sft+L {
+        Combo_Ctrl_Sft_L {
             bindings = <&kp LC(LS(L))>;
             key-positions = <20 32>;
         };
@@ -139,7 +139,7 @@
             key-positions = <9 8>;
         };
 
-        GF_Ctrl+Sft+X {
+        GF_Ctrl_Sft_X {
             bindings = <&kp LS(LC(X))>;
             key-positions = <14 13>;
         };
