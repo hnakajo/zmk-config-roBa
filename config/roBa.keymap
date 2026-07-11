@@ -276,7 +276,7 @@
 
         NUM {
             bindings = <
-&kp F12  &kp F11  &kp F10  &kp F9  &none                       &none       &kp N7        &kp N8        &kp N9        &kp LC(BACKSPACE)
+&kp F12  &kp F11  &kp F10  &kp F9  &none                       &none       &kp N7        &kp N8        &kp N9        &kp BACKSPACE
 &kp F8   &kp F7   &kp F6   &kp F5  &none   &trans      &trans  &kp COMMA   &kp N4        &kp N5        &kp N6        &none
 &kp F4   &kp F3   &kp F2   &kp F1  &none   &trans      &trans  &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
 &trans   &trans   &trans   &trans  &trans  &trans      &trans  &trans                                                &none
