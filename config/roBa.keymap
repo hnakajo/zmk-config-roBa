@@ -183,6 +183,11 @@
             bindings = <&mo 5>;
             key-positions = <40 41>;
         };
+
+        SX_ctrl_X {
+            bindings = <&kp LC(X)>;
+            key-positions = <11 23>;
+        };
     };
 
     macros {
