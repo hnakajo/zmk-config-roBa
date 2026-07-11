@@ -163,6 +163,16 @@
             bindings = <&kp LG(E)>;
             key-positions = <0 10>;
         };
+
+        ZX_ctrl_Z {
+            bindings = <&kp LC(Z)>;
+            key-positions = <22 23>;
+        };
+
+        WS_ctrl_S {
+            bindings = <&kp F12>;
+            key-positions = <1 11>;
+        };
     };
 
     macros {
