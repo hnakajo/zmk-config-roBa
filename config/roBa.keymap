@@ -94,7 +94,7 @@
             key-positions = <25 24>;
         };
 
-        P-_HASH {
+        P_HASH {
             bindings = <&kp HASH>;
             key-positions = <9 21>;
         };
