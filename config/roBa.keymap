@@ -221,9 +221,9 @@
             flavor = "balanced";
         };
 
-        LYR_NUM: LYR_NUM {
+        LYR_hold: LYR_hold {
             compatible = "zmk,behavior-hold-tap";
-            label = "LYR_NUM";
+            label = "LYR_HOLD";
             bindings = <&mo>, <&none>;
 
             #binding-cells = <2>;
@@ -242,7 +242,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LAYER";
             #binding-cells = <0>;
-            bindings = <&hold_layer 1>, <&hold_layer 2>;
+            bindings = <&LYR_hold 1 0>, <&LYR_hold 2 0>;
         };
 
         td_quartation: td_quartation {
@@ -250,15 +250,6 @@
             label = "TD_QUARTATION";
             #binding-cells = <0>;
             bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
-        };
-
-        hold_layer: hold_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_LAYER";
-            bindings = <&mo>;
-            #binding-cells = <2>;
-            hold-trigger-key-positions = <41>;
-            tapping-term-ms = <200>;
         };
     };
 
