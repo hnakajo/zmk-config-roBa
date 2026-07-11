@@ -224,7 +224,7 @@
         LYR_hold: LYR_hold {
             compatible = "zmk,behavior-hold-tap";
             label = "LYR_HOLD";
-            bindings = <&mo>, <&none>;
+            bindings = <&mo>, <&mo>;
 
             #binding-cells = <2>;
             hold-trigger-key-positions = <41>;
