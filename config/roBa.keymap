@@ -242,7 +242,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LAYER";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&mo 2>;
+            bindings = <&hold_layer 1>, <&hold_layer 2>;
         };
 
         td_quartation: td_quartation {
@@ -250,6 +250,15 @@
             label = "TD_QUARTATION";
             #binding-cells = <0>;
             bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
+        };
+
+        hold_layer: hold_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_LAYER";
+            bindings = <&mo>;
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <41>;
+            tapping-term-ms = <200>;
         };
     };
 
