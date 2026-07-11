@@ -242,7 +242,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LAYER";
             #binding-cells = <0>;
-            bindings = <&LYR_hold 1 0>, <&LYR_hold 2 0>;
+            bindings = <&LYR_hold 1 1>, <&LYR_hold 2 2>;
         };
 
         td_quartation: td_quartation {
