@@ -10,10 +10,10 @@
 
 &trackball {
     automouse-layer = <3>;
-    scroll-layers = <5>;
+    scroll-layers = <4>;
 
     // arrows {
-    //     layers = <3>;
+    //     layers = <1>;
     //     bindings =
     //         <&kp RIGHT_ARROW>,
     //         <&kp LEFT_ARROW>,
