@@ -198,6 +198,16 @@
             bindings = <&kp RC(Y)>;
             key-positions = <5 6>;
         };
+
+        grouping {
+            bindings = <&kp LS(LA(RIGHT_ARROW))>;
+            key-positions = <7 20>;
+        };
+
+        ungrouping {
+            bindings = <&kp LS(LA(LEFT_ARROW))>;
+            key-positions = <7 18>;
+        };
     };
 
     macros {
