@@ -206,11 +206,18 @@
     };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 1 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
+        email_work: email_work {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp H &kp I &kp R &kp O &kp K &kp I &kp N &kp A &kp K &kp A &kp J &kp O &kp AT &kp K &kp P &kp M &kp G &kp DOT &kp C &kp O &kp M>;
+            label = "EMAIL_WORK";
+        };
+
+        email_private: email_private {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp H &kp DOT &kp N &kp A &kp K &kp A &kp J &kp O &kp N0 &kp N8 &kp N2 &kp N4 &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "EMAIL_PRIVATE";
         };
     };
 
@@ -284,10 +291,10 @@
 
         ARROW {
             bindings = <
-&none  &none  &none  &none   &none                       &trans  &kp PAGE_UP       &kp UP_ARROW      &kp PAGE_DOWN     &trans
-&none  &none  &none  &none   &none   &trans      &trans  &trans  &kp LEFT          &kp DOWN_ARROW    &kp RIGHT_ARROW   &trans
-&none  &none  &none  &none   &none   &trans      &trans  &trans  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)
-&none  &none  &none  &trans  &trans  &trans      &trans  &trans                                                        &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &kp PAGE_UP       &kp UP_ARROW      &kp PAGE_DOWN     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LEFT          &kp DOWN_ARROW    &kp RIGHT_ARROW   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                        &trans
             >;
         };
 
@@ -320,10 +327,10 @@
 
         BTH {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                            &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &email_work   &email_private  &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans        &trans          &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                              &trans
             >;
         };
     };
