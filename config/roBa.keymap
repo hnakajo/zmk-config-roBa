@@ -34,11 +34,6 @@
             key-positions = <10 22>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
         eq {
             bindings = <&kp EQUAL>;
             key-positions = <30 31>;
