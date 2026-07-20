@@ -198,6 +198,11 @@
             bindings = <&mt LG(LS(S)) ESCAPE>;
             key-positions = <0 1>;
         };
+
+        YU_ctrl_Y {
+            bindings = <&kp RC(Y)>;
+            key-positions = <5 6>;
+        };
     };
 
     macros {
