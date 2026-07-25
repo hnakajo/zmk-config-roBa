@@ -31,7 +31,7 @@
 
         AZ_TAB {
             bindings = <&kp TAB>;
-            key-positions = <10 22>;
+            key-positions = <10 0>;
         };
 
         eq {
@@ -156,7 +156,7 @@
 
         QA {
             bindings = <&kp LG(E)>;
-            key-positions = <0 10>;
+            key-positions = <0 1 2>;
         };
 
         ZX_ctrl_Z {
@@ -176,7 +176,7 @@
 
         BTH {
             bindings = <&mo 5>;
-            key-positions = <40 41>;
+            key-positions = <16 28>;
         };
 
         SX_ctrl_X {
@@ -207,6 +207,11 @@
         ungrouping {
             bindings = <&kp LS(LA(LEFT_ARROW))>;
             key-positions = <7 18>;
+        };
+
+        AZ_ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <10 22>;
         };
     };
 
@@ -333,7 +338,7 @@
         BTH {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &email_work   &email_private  &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 2    &bt BT_SEL 1  &bt BT_SEL 3
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans        &trans          &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                              &trans
             >;
