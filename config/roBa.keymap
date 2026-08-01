@@ -268,6 +268,8 @@
             label = "TD_JP_EN";
             #binding-cells = <0>;
             bindings = <&kp LANGUAGE_1>, <&kp LANG2>;
+
+            tapping-term-ms = <250>;
         };
 
         td_layer: td_layer {
@@ -284,6 +286,8 @@
             label = "TD_QUARTATION";
             #binding-cells = <0>;
             bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
+
+            tapping-term-ms = <250>;
         };
     };
 
