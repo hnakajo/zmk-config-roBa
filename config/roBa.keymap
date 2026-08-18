@@ -171,7 +171,7 @@
 
         SCROLL {
             bindings = <&mo 4>;
-            key-positions = <32 33>;
+            key-positions = <32 31>;
         };
 
         BTH {
@@ -305,17 +305,17 @@
 
         ARROW {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &kp PAGE_UP       &kp UP_ARROW      &kp PAGE_DOWN     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LEFT          &kp DOWN_ARROW    &kp RIGHT_ARROW   &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                        &trans
+&trans  &trans  &trans  &trans  &trans                      &trans           &kp PAGE_UP       &kp UP_ARROW      &kp PAGE_DOWN     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LCTRL        &kp LEFT          &kp DOWN_ARROW    &kp RIGHT_ARROW   &kp LC(LSHFT)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp RIGHT_SHIFT  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                 &trans
             >;
         };
 
         NUM {
             bindings = <
 &kp F12  &kp F11  &kp F10  &kp F9  &none                       &none       &kp N7        &kp N8        &kp N9        &kp BACKSPACE
-&kp F8   &kp F7   &kp F6   &kp F5  &none   &trans      &trans  &kp COMMA   &kp N4        &kp N5        &kp N6        &none
+&kp F8   &kp F7   &kp F6   &kp F5  &none   &trans      &trans  &kp COMMA   &kp N4        &kp N5        &kp N6        &kp LC(LSHFT)
 &kp F4   &kp F3   &kp F2   &kp F1  &none   &trans      &trans  &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
 &trans   &trans   &trans   &trans  &trans  &trans      &trans  &trans                                                &none
             >;
@@ -332,10 +332,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp RCTRL  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                             &trans
             >;
         };
 
