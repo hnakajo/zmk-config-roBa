@@ -14,12 +14,7 @@
 
     arrows {
         layers = <6>;
-
-        bindings =
-            <&kp LC(PAGE_DOWN)>,
-            <&kp LC(PAGE_UP)>,
-            <&none>,
-            <&none>;
+        bindings = <&kp LC(PAGE_DOWN)>, <&kp LC(PAGE_UP)>, <&none>, <&none>;
 
         tick = <40>;
         wait-ms = <20>;
@@ -123,7 +118,7 @@
 
         Combo_PLUS {
             bindings = <&kp PLUS>;
-            key-positions = <31 32>;
+            key-positions = <32 33>;
         };
 
         Combo_Ctrl_Sft_L {
