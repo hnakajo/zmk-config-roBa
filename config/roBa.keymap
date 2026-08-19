@@ -210,6 +210,11 @@
             bindings = <&kp LCTRL>;
             key-positions = <10 22>;
         };
+
+        TR_Ctrl+Shft+R {
+            bindings = <&kp LC(LS(R))>;
+            key-positions = <4 3>;
+        };
     };
 
     macros {
