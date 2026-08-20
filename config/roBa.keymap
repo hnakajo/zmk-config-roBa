@@ -213,7 +213,7 @@
 
         TR_Ctrl+Shft+R {
             bindings = <&kp LC(LS(R))>;
-            key-positions = <4 3 2>;
+            key-positions = <4 3>;
         };
     };
 
