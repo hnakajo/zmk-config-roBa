@@ -14,9 +14,9 @@
 
     arrows {
         layers = <6>;
-        bindings = <&kp LC(PAGE_DOWN)>, <&kp LC(PAGE_UP)>, <&none>, <&none>;
+        bindings = <&kp LC(PAGE_DOWN)>, <&kp LC(PAGE_UP)>, <&kp LA(LS(TAB))>, <&kp LA(TAB)>;
 
-        tick = <40>;
+        tick = <100>;
         wait-ms = <20>;
         tap-ms = <20>;
     };
