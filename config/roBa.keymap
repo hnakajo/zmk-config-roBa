@@ -17,8 +17,8 @@
         bindings =
             <&kp LC(PAGE_DOWN)>,
             <&kp LC(PAGE_UP)>,
-            <&kp LA(LS(TAB))>,
-            <&kp LA(TAB)>;
+            <&kp LS(TAB)>,
+            <&kp TAB>;
 
         tick = <100>;
         wait-ms = <20>;
