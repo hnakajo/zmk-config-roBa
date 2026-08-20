@@ -14,7 +14,11 @@
 
     arrows {
         layers = <6>;
-        bindings = <&kp LC(PAGE_DOWN)>, <&kp LC(PAGE_UP)>, <&kp LA(LS(TAB))>, <&kp LA(TAB)>;
+        bindings =
+            <&kp LC(PAGE_DOWN)>,
+            <&kp LC(PAGE_UP)>,
+            <&kp LA(LS(TAB))>,
+            <&kp LA(TAB)>;
 
         tick = <100>;
         wait-ms = <20>;
@@ -334,10 +338,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp RCTRL  &trans  &trans  &mo 6
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                             &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mo 6   &trans  &trans  &kp RCTRL
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
