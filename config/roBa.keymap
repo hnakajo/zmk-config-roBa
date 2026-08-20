@@ -219,6 +219,11 @@
             bindings = <&kp LC(LS(R))>;
             key-positions = <4 3>;
         };
+
+        SHEET {
+            bindings = <&mo 6>;
+            key-positions = <30 31>;
+        };
     };
 
     macros {
