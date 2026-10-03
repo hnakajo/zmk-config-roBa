@@ -227,7 +227,7 @@
 
         ctrl_sht {
             bindings = <&kp LS(LCTRL)>;
-            key-positions = <22 10 11>;
+            key-positions = <10 11 12>;
         };
     };
 
