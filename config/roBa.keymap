@@ -224,6 +224,11 @@
             bindings = <&mo 6>;
             key-positions = <30 31 32>;
         };
+
+        ctrl_sht {
+            bindings = <&kp LS(LCTRL)>;
+            key-positions = <22 10 11>;
+        };
     };
 
     macros {
@@ -314,10 +319,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R      &kp T                                         &kp Y      &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F      &kp G      &kp DELETE         &td_quartation  &kp H      &kp J  &kp K      &kp L    &mt GRAVE MINUS
-&kp Z      &kp X         &kp C         &kp V      &kp B      &kp RIGHT_ALT      &TD_JP_EN       &kp N      &kp M  &kp COMMA  &kp DOT  &mt SEMICOLON COLON
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LSHFT  &kp SPACE  &kp ENTER          &kp BACKSPACE   &td_layer                             &kp ENTER
+&kp Q           &kp W         &kp E      &kp R      &kp T                                                &kp Y      &kp U  &kp I      &kp O    &kp P
+&kp A           &kp S         &kp D      &kp F      &kp G      &kp DELETE                &td_quartation  &kp H      &kp J  &kp K      &kp L    &mt GRAVE MINUS
+&kp Z           &kp X         &kp C      &kp V      &kp B      &mt RIGHT_ALT DELETE      &TD_JP_EN       &kp N      &kp M  &kp COMMA  &kp DOT  &mt SEMICOLON COLON
+&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LCTRL  &kp LSHFT  &kp SPACE  &kp ENTER                 &kp BACKSPACE   &td_layer                             &kp ENTER
             >;
         };
 
