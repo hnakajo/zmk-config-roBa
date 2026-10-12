@@ -247,6 +247,11 @@
             key-positions = <32 33>;
             layers = <3>;
         };
+
+        Win_tab {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <0 1 2 3>;
+        };
     };
 
     macros {
