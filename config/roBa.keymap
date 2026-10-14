@@ -217,7 +217,7 @@
 
         TR_Ctrl_Shft_R {
             bindings = <&kp LC(LS(R))>;
-            key-positions = <4 3 2>;
+            key-positions = <3 2 1>;
         };
 
         SHEET {
@@ -250,7 +250,7 @@
 
         Win_tab {
             bindings = <&kp LG(TAB)>;
-            key-positions = <0 1 2 3>;
+            key-positions = <34 35 36>;
         };
     };
 
